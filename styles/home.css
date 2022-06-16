@@ -1,1 +1,5 @@
 /* CSS for home page (index.html) */
+
+body {
+    background-image: url(../assets/cartoon-road-mountains.jpeg);
+}
