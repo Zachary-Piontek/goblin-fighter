@@ -8,6 +8,12 @@
 
 ## Making a plan
 
+
+
+https://zak708048.invisionapp.com/freehand/Goblin-Fighter-wucAg3ZZg?dsid_h=266b1a57d9c14595f74d4afc7267c95c05559b21849a5dff4b8f33b89e8809d1&uid_h=e6af984f3346fef1f0c34eff42bbf361ce4ba1ed00769451fff0f1e4179436c6
+
+
+
 1. Make a drawing of your app. **Simple "wireframes"**
 1. Once you have a drawing, **name the HTML elements** you'll need to realize your vision**
 1. Determine the Components (sections) of your app.
