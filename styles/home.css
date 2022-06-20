@@ -8,16 +8,35 @@ main {
 }
 #fighter-stats {
     display: flex;
-    width: 50%;
+    width: fit-content;
+    align-items: top;
+    text-align: center;
+    justify-content: space-between;
 }
 
 #goblin-stats {
     display: flex;
-    width: 50%;
+    align-items: top;
+    text-align: center;
+    width: fit-content;
+    justify-content: space-around;
+
 }
 
 button {
-    width: 50px;
-    height: 30px;
+    width: 70px;
+    height: 40px;
     margin: 5px;
+}
+
+span {
+    font-size: 50px;
+    border: 1px solid black;
+}
+
+input {
+    display: flex;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 25px;
 }

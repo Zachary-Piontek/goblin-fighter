@@ -26,22 +26,23 @@
     <main>
     
         <section id="fighter-stats">
-            <div id="massacred-goblins">
-                <p>Massacred goblins <span id="massacred-number"></span> goblins</p>
             <div id="fighter">
-                <p> HP:
+                <div id="massacred-goblins">
+                    <p>Massacred goblins <span id="massacred-number"></span> goblins</p>
+                </div>
+                <p> User HP:
                     <span id="fighter-hp"></span>
                 </p> 
                 <img id="fighter-image" src="./assets/spartan.png">
             </div>
         </section>
         <section id="goblin-stats">
-            <form>
+            <form id="goblin-creator">
                 <input name="goblin-name"/>
-                <button id="attack-button"></button>
+                <button id="attack-button">Create Goblin</button>
             </form>
             <div id="goblin-list">
-
+                <span></span>
             </div>
         </section>
     </main>
