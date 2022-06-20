@@ -3,3 +3,21 @@
 body {
     background-image: url(../assets/cartoon-road-mountains.jpeg);
 }
+main {
+    display: flex;
+}
+#fighter-stats {
+    display: flex;
+    width: 50%;
+}
+
+#goblin-stats {
+    display: flex;
+    width: 50%;
+}
+
+button {
+    width: 50px;
+    height: 30px;
+    margin: 5px;
+}

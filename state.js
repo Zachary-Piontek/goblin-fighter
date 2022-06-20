@@ -1,17 +1,11 @@
-// set state to an empty object
-const state = {};
+export function createGoblin(startStats) {
+    const goblinBox = document.createElement('div');
+    const goblinName = document.createElement('span');
+    const goblinHp = document.createElement('span');
 
-// initialize state, also used in test
-export function initialize() {
-    // What is the initial shape of state?
-    
-    // For example:
-    // state.game = null;
-    // state.pastGames = [];
+    goblinName.textContent = startStats.goblinName;
+    console.log(goblinHp, goblinName);
+    goblinHp.textContent = `${startStats.goblinHp}`;
+    goblinBox.append(goblinName, goblinHp);
+    return goblinBox;
 }
-// call initialize
-initialize();
-// export state as primary (default) export
-export default state;
-
-// export dispatch functions that modify state

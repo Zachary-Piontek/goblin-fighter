@@ -1,17 +1,46 @@
-// import services and utilities
+import {
+    createGoblin,
+} from './state.js';
 
-// import component creators
+let fighterHp = 10;
+let massacredGoblins = 0;
 
-// import state and dispatch functions
 
-// Create each component: 
-// - pass in the root element via querySelector
-// - pass any needed handler functions as properties of an actions object 
+let startingGoblins = [
+    {
+        goblinName: 'Tigz',
+        goblinHp: 4,
+    },
+    {
+        goblinName: 'Gronx',
+        goblinHp: 2,
+    },
+];
 
-// Roll-up display function that renders (calls with state) each component
-function display() {
-    // Call each component passing in props that are the pieces of state this component needs
+
+
+const Hp = document.querySelector('#fighter-hp');
+const goblinList = document.querySelector('#goblin-list');
+const massacredNumber = document.querySelector('#massacred-number');
+
+function displayGame() {
+    massacredNumber.textContent = massacredGoblins;
+    if (fighterHp === 0) {
+        alert();
+    }
+    else {
+        Hp.textContent = `${fighterHp}`;
+    }
+    console.log(fighterHp);
+
+    for (let start of startingGoblins) {
+        const goblin = createGoblin(start);
+        goblin.addEventListener('click', () => {
+            displayGame();
+        });
+        goblinList.append(goblin);
+    }
+    console.log(massacredGoblins);
 }
 
-// Call display on page load
-display();
+displayGame();
