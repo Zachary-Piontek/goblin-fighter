@@ -31,12 +31,12 @@ function displayGame() {
     goblinList.textContent = '';
     if (fighterHp === 0) {
         alert('Too many goblins to overcome.');
-        Hp.textContent = 'Valiant attempt. Try again.';
+        // Hp.textContent = 'Valiant attempt. Try again.';
     }
     else {
         Hp.textContent = `${fighterHp}`;
     }
-    console.log(fighterHp);
+    
 
     for (let start of startingGoblins) {
         const goblin = createGoblin(start);
@@ -46,7 +46,7 @@ function displayGame() {
             if (attack > 50) {
                 start.goblinHp--;
                 alert(`You wounded ${start.goblinName}. Keep attacking.`);
-                console.log(attack, start.goblinHp);
+                
             }
             else if (attack < 40) {
                 fighterHp--;
@@ -63,7 +63,7 @@ function displayGame() {
         });
         goblinList.append(goblin);
     }
-    console.log(massacredGoblins);
+    
 }
 
 goblinCreator.addEventListener('submit', (e) => {

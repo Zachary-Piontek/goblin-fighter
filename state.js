@@ -4,7 +4,7 @@ export function createGoblin(startStats) {
     const goblinHp = document.createElement('span');
 
     goblinName.textContent = startStats.goblinName;
-    console.log(goblinHp, goblinName);
+    
     goblinHp.textContent = `${startStats.goblinHp}`;
     goblinBox.append(goblinName, goblinHp);
     return goblinBox;
