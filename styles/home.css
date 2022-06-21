@@ -1,1 +1,42 @@
 /* CSS for home page (index.html) */
+
+body {
+    background-image: url(../assets/cartoon-road-mountains.jpeg);
+}
+main {
+    display: flex;
+}
+#fighter-stats {
+    display: flex;
+    width: fit-content;
+    align-items: top;
+    text-align: center;
+    justify-content: space-between;
+}
+
+#goblin-stats {
+    display: flex;
+    align-items: top;
+    text-align: center;
+    width: fit-content;
+    justify-content: space-around;
+
+}
+
+button {
+    width: 70px;
+    height: 40px;
+    margin: 5px;
+}
+
+span {
+    font-size: 50px;
+    border: 1px solid black;
+}
+
+input {
+    display: flex;
+    padding-top: 10px;
+    margin-top: 10px;
+    font-size: 25px;
+}

@@ -17,12 +17,35 @@
 </head>
 
 <body>
+    
     <header>
         <img src="assets/html_css_js.png">
         <h1>Web MVC UI</h1>
     </header>
 
-    <main></main>
+    <main>
+    
+        <section id="fighter-stats">
+            <div id="fighter">
+                <div id="massacred-goblins">
+                    <p>Massacred goblins <span id="massacred-number"></span> goblins</p>
+                </div>
+                <p> User HP:
+                    <span id="fighter-hp"></span>
+                </p> 
+                <img id="fighter-image" src="./assets/spartan.png">
+            </div>
+        </section>
+        <section id="goblin-stats">
+            <form id="goblin-creator">
+                <input name="goblin-name"/>
+                <button id="attack-button">Create Goblin</button>
+            </form>
+            <div id="goblin-list">
+                <span></span>
+            </div>
+        </section>
+    </main>
 
     <footer>&copy;2022 Aspiring Software Developer</footer>
 
