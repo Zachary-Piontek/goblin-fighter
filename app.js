@@ -1,6 +1,6 @@
 import {
     createGoblin,
-} from './state.js';
+} from './stateGoblin.js';
 
 let fighterHp = 10;
 let massacredGoblins = 0;
@@ -31,7 +31,7 @@ function displayGame() {
     goblinList.textContent = '';
     if (fighterHp === 0) {
         alert('Too many goblins to overcome.');
-        // Hp.textContent = 'Valiant attempt. Try again.';
+        Hp.textContent = 'Valiant attempt. Try again.';
     }
     else {
         Hp.textContent = `${fighterHp}`;
